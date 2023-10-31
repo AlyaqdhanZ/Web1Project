@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Oman Forts</title>
+        <link rel="stylesheet" href="..\style.css">
+        <style>
+            .box {
+                width: fit-content;
+                height: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            .box h1 {
+                font-size: 15vw;
+                background-image: linear-gradient(45deg, red, purple, blue, green, yellow, orange, red, purple, blue, green, yellow, orange, red);
+                background-size: 250%;
+                animation: tx-animation 10s infinite alternate;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                -webkit-text-stroke-color: white;
+                -webkit-text-stroke-width: .2vw;
+            }
+
+            @keyframes tx-animation {
+                0% {background-position: left;}
+                100% {background-position: right;}
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav">
+                <div id="logo">
+                    <img src="..\logo.png" alt="logo" width="100%">
+                </div>
+                <div id="name"><a href="https://www.nct.edu.om" target="_blank">UTAS</a></div>
+                <div id="home">The End</div>
+                <div id="about"><a href="..\index.html">Home</a></div>
+            </div>
+        </nav>
+        <main>
+            <div class="main">
+                <div class="box">
+                    <h1>Thank You</h1>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                &copy Copyright reserved to <abbr title="University of Technology and Applied Sciences">UTAS</abbr> 2022
+            </div>
+        </footer>
+    </body>
+</html>

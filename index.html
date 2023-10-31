@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>Oman Forts</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* images fill their div 100% and rounded corners */
+            .main img {
+                width: 100%;
+                border-radius: 25px;
+            }
+
+            /* images size and shadow */
+            .img {
+                width: 60%;
+                position: relative;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                box-shadow: 0 0 2vw rgba(0, 0, 0);
+                border-radius: 25px;
+            }
+
+            /* helps scroll to the middle of the img */
+            .anchor {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50vh);
+            }
+
+            /* removes the img outline */
+            .main a:focus {
+                outline: none;
+            }
+
+            /* hover pseudo elements style */
+            .img1::after {
+               content: 'Nizwa Fort';
+               pointer-events: none;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: rgba(0, 0, 0, 0.5);
+               color: white;
+               font-weight: bold;
+               font-size: 6vw;
+               border-radius: 25px;
+               position: absolute;
+               top: 0;
+               right: 0;
+               left: 0;
+               bottom: 0;
+               opacity: 0;
+               transition: 0.5s;
+            }
+
+            .img2::after {
+               content: 'Bahla Fort';
+               pointer-events: none;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: rgba(0, 0, 0, 0.5);
+               color: white;
+               font-weight: bold;
+               font-size: 6vw;
+               border-radius: 25px;
+               position: absolute;
+               top: 0;
+               right: 0;
+               left: 0;
+               bottom: 0;
+               opacity: 0;
+               transition: 0.5s;
+            }
+
+            .img3::after {
+               content: 'Al Jalali Fort';
+               pointer-events: none;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: rgba(0, 0, 0, 0.5);
+               color: white;
+               font-weight: bold;
+               font-size: 6vw;
+               border-radius: 25px;
+               position: absolute;
+               top: 0;
+               right: 0;
+               left: 0;
+               bottom: 0;
+               opacity: 0;
+               transition: 0.5s;
+            }
+
+            .img4::after {
+               content: 'Al Mirani Fort';
+               pointer-events: none;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: rgba(0, 0, 0, 0.5);
+               color: white;
+               font-weight: bold;
+               font-size: 6vw;
+               border-radius: 25px;
+               position: absolute;
+               top: 0;
+               right: 0;
+               left: 0;
+               bottom: 0;
+               opacity: 0;
+               transition: 0.5s;
+            }
+
+            /* when hovering make visible */
+            .img1:hover::after,
+            .img2:hover::after,
+            .img3:hover::after,
+            .img4:hover::after,
+            .img1:focus-within::after,
+            .img2:focus-within::after,
+            .img3:focus-within::after,
+            .img4:focus-within::after {
+                opacity: 1;
+            }
+
+            /* 1st and 3rd images to the right */
+            .img1, .img3 {
+                margin-left: auto;
+                margin-right: 5%;
+            }
+
+            /* 2nd and 4th images to the left */
+            .img2, .img4 {
+                margin-right: auto;
+                margin-left: 5%;
+            }
+
+            /* back to top button style */
+            .top {
+                background: white;
+                position: fixed;
+                bottom: 7vw;
+                right: 7vw;
+                width: 5vw;
+                height: 5vw;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 4vw;
+                font-weight: bold;
+                color: #444;
+                text-decoration: none;
+                opacity:0;
+                box-shadow: 0 0 1vw rgba(0, 0, 0);
+                pointer-events: none;
+                transform: translateY(7vw);
+                transition: .4s;
+            }
+
+            .top:hover {
+                background-color: #444;
+                color: white;
+            }
+
+            .top:active {
+                background-color: black;
+                color: white;
+            }
+            
+            .top.active {
+                pointer-events: auto;
+                opacity:1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav">
+                <div id="logo">
+                    <img src="logo.png" alt="logo" width="100%">
+                </div>
+                <div id="name"><a href="https://www.nct.edu.om" target="_blank">UTAS</a></div>
+                <div id="home">Home</div>
+                <div id="about"><a href="pages\credit.html">Credit</a></div>
+            </div>
+        </nav>
+        <main>
+            <div class="main">
+                <div class="img img1">
+                    <a href="pages\nizwa.html">
+                        <img src="images\nizwa.jpg" alt="nizwa">
+                        <span class="anchor" id="nizwa"></span>
+                    </a>
+                </div>
+                <div class="img img2">
+                    <a href="pages\bahla.html">
+                        <img src="images\bahla.jpg" alt="bahla">
+                        <span class="anchor" id="bahla"></span>
+                    </a>
+                </div>
+                <div class="img img3">
+                    <a href="pages\jalali.html">
+                        <img src="images\jalali.jpg" alt="jalali">
+                        <span class="anchor" id="jalali"></span>
+                    </a>
+                </div> 
+                <div class="img img4">
+                    <a href="pages\mirani.html">
+                        <img src="images\mirani.jpg" alt="mirani">
+                        <span class="anchor" id="mirani"></span>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                &copy Copyright reserved to <abbr title="University of Technology and Applied Sciences">UTAS</abbr> 2022
+            </div>
+        </footer>
+        <a href="#" class="top">▲</a>
+        <script src="main.js"></script>
+    </body>
+</html>

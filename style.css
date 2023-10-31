@@ -1,0 +1,119 @@
+/* styling for all pages */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 1.5vw 1.5vw 1.5vw;
+    overflow: overlay;
+}
+
+::selection {
+    background-color: #444;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 1.5vw;
+    height: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    margin-top: 7.5vw;
+    margin-bottom: 5vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+#logo > img {
+    width: 3vw;
+}
+
+#home {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4.5vw
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+
+nav > div > div {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.nav a,
+.container a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    outline: none;
+}
+
+.nav a::after,
+.container a::after {
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: .15em;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s;
+}
+
+.nav a:hover::after,
+.container a:hover::after,
+.nav a:focus-within::after,
+.container a:focus-within::after  {
+    transform: scaleX(100%);
+}
+
+.nav a:visited,
+.container a:visited {
+    color: black;
+}
+
+.nav a:hover,
+.container a:hover,
+.container li:hover,
+.nav a:focus-within,
+.container a:focus-within,
+.container li:focus-within {
+    color: blue;
+}
+
+#logo, #about {
+    padding: 1vw;
+}
+
+.main {
+    width: 100%;
+    overflow: auto;
+    border-radius: 25px;
+    background-image: linear-gradient(45deg, #ccc, #000, #ccc)
+}
+
+.foot {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding-top: 1vw;
+}
